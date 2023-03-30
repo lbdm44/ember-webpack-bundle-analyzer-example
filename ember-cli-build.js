@@ -1,10 +1,16 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const BundleAnalyzerPlugin =
+  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = function (defaults) {
   const app = new EmberApp(defaults, {
-    // Add options here
+    autoImport: {
+      webpack: {
+        plugins: [new BundleAnalyzerPlugin()],
+      },
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
