@@ -68,5 +68,13 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "packageManager": "yarn@3.3.1",
+  "volta": {
+    "node": "16.20.0",
+    "yarn": "3.3.1"
+  },
+  "dependencies": {
+    "@github/hotkey": "^2.0.1"
   }
 }

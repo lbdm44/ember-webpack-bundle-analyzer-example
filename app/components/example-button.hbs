@@ -1,0 +1,28 @@
+<section>
+  <h2>Hotkey Example Button</h2>
+  <p>
+    This is an example button component. It is a simple button that can be
+    clicked to increment a counter.
+  </p>
+  <p>
+    <button
+      type="button"
+      data-hotkey="i"
+      {{hotkey}}
+      {{on "click" this.increment}}
+    >Increment</button>
+  </p>
+  <p>
+    <button
+      type="button"
+      data-hotkey="d"
+      {{hotkey}}
+      {{on "click" this.decrement}}
+    >Decrement</button>
+  </p>
+  <p>
+    You have clicked the button
+    {{this.count}}
+    times.
+  </p>
+</section>
